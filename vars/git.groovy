@@ -1,4 +1,5 @@
 def call( Map repo) {
-  git url: "git@github.com:AliceCodeZhang/${repo.name}"
+  echo "name is ", ${repo.name}
+  git url: "https://github.com/AliceCodeZhang/${repo.name}.git"
 }
 
